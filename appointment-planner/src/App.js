@@ -20,7 +20,7 @@ function App() {
   }
 
   const addAppointment = (newAppointnment) => {
-    setContacts(prev => [newAppointnment, ...prev]);
+    setAppointments(prev => [newAppointnment, ...prev]);
   }
 
   return (
