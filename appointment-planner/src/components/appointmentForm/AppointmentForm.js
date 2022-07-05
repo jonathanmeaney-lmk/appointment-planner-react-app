@@ -34,10 +34,10 @@ export const AppointmentForm = ({
       <br />
       <label>
         <ContactPicker
-          type="text"
           name="contact"
           value={contact}
-          onChange={(e) => setPhone(e.target.value)}
+          contacts={contacts.map((contact) => contact.name)}
+          onChange={(e) => setContact(e.target.value)}
           required
           placeholder="Contact"
         />
@@ -47,7 +47,7 @@ export const AppointmentForm = ({
         <input
           type="date"
           name="date"
-          value={time}
+          value={date}
           min={getTodayString()}
           onChange={(e) => setDate(e.target.value)}
           required
@@ -64,7 +64,7 @@ export const AppointmentForm = ({
         />
       </label>
       <br />
-      <input type="submit" value="Add Contact" />
+      <input type="submit" value="Add Appoimtment" />
     </form>
   );
 };
