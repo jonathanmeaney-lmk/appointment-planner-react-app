@@ -39,7 +39,6 @@ export const AppointmentForm = ({
           contacts={contacts.map((contact) => contact.name)}
           onChange={(e) => setContact(e.target.value)}
           required
-          placeholder="Contact"
         />
       </label>
       <br />
